@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&family=Young+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background: url("/img/bg.jpg");
+    background-color: red;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#board {
+    background: linear-gradient( rgb(172, 248, 150), rgb(240, 240, 134));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px black;
+    display: grid;
+    grid-template-columns:repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+
+.snake{
+    background-color: rgb(14, 173, 14);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.head{
+    background: linear-gradient(yellow , rgb(1, 105, 1));
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.food{
+    background-color: rgb(83, 5, 83);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#scorebox{
+    position: absolute;
+    top: 35px;
+    right: 230px;
+    font-size: 40px;
+    font-family: 'Young Serif', serif;
+}
+#hiscorebox{
+    position: absolute;
+    top: 0px;
+    right: 127px;
+    font-size: 40px;
+    font-family: 'Young Serif', serif;
+}
